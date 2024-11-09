@@ -8,11 +8,11 @@
                 <img class="rounded-full w-12" src="{{$repository['owner']['avatar_url']}}">
                 <p class="text-gray-600 mt-2"><strong>{{ $repository['owner']['login'] }}</strong></p>
 
-                <p class="text-gray-400 mt-2"><strong>{{ $repository['language'] }}</strong></p>
 
-                <div class="flex items-center mt-2 text-gray-700">
-
+                <div class="flex items-center justify-between mt-2 text-gray-700">
                     <span class="text-gray-400">⭐ {{ $repository['stargazers_count'] }}</span>
+                    <p class="text-gray-400 "><strong>{{ $repository['language'] }}</strong></p>
+
                 </div>
                 <a href="{{ $repository['html_url'] }}" target="_blank" class="inline-block mt-4 bg-blue-500 text-white py-2 px-4 rounded hover:bg-blue-600">Ver en GitHub</a>
             </div>
